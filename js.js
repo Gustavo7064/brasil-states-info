@@ -200,7 +200,19 @@ function Mostrar() {
       gentCapital = "";
       break;
   }
+  // Preencher os campos
+  document.getElementById("ufExtenso").value = nome;
+  document.getElementById("capital").value = capital;
+  document.getElementById("gentilicoUF").value = gentUF;
+  document.getElementById("gentilicoCapital").value = gentCapital;
+}
 
+function Limpar() {
+  document.getElementById("estados").selectedIndex = 0;
+  document.getElementById("ufExtenso").value = "";
+  document.getElementById("capital").value = "";
+  document.getElementById("gentilicoUF").value = "";
+  document.getElementById("gentilicoCapital").value = "";
 }
 
 
